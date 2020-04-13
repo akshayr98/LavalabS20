@@ -12,7 +12,7 @@ export default function App() {
       <TouchableOpacity
         onPress={() => alert('Hello, world!')}
         style={{ position: 'absolute',
-                justifyContent: 'center',
+              justifyContent: 'center',
                 width: 290,
                 height: 50,
                 left: 42,

@@ -1,13 +1,18 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import 'react-native-gesture-handler';
+
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+
 import logo from './assets/logo.png'; 
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Image source={logo} style={{ position: 'absolute', width: 235, height: 70, left: 70, top: 275}} resizeMode='contain' /> 
-
-
 
       <TouchableOpacity
         onPress={() => alert('Hello, world!')}

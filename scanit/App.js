@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import FirstPage from './components/FirstPage'
 import LoginPage from './components/LoginPage'
+import signupPage from './components/signupPage'
 
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -15,6 +16,7 @@ function App() {
         <Stack.Navigator initialRouteName="FirstPage">
           <Stack.Screen name="FirstPage" component={FirstPage} />
           <Stack.Screen name="LoginPage" component={LoginPage} />
+          <Stack.Screen name="signupPage" component={signupPage}/>
         </Stack.Navigator>
       </NavigationContainer>
     );

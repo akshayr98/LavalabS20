@@ -1,13 +1,13 @@
 import React from 'react';
 import { TouchableOpacity, Image, StyleSheet, Text, View, Button } from 'react-native';
 
-import logo from '.././assets/logo.png'; 
+import logo from '.././assets/logo.png';
 
 export default class FirstPage extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-      <Image source={logo} style={{ position: 'absolute', width: 235, height: 70, left: 70, top: 275}} resizeMode='contain' /> 
+      <Image source={logo} style={{ position: 'absolute', width: 235, height: 70, left: 70, top: 275}} resizeMode='contain' />
 
       <TouchableOpacity
          onPress={
@@ -27,7 +27,10 @@ export default class FirstPage extends React.Component {
       </TouchableOpacity>
 
       <TouchableOpacity
-        onPress={() => alert('Bye, world!')}
+        onPress={() => this.props.navigation.navigate( 'signupPage', {
+
+        })
+        }
         style={{ position: 'absolute',
                 justifyContent: 'center',
                 width: 290,
